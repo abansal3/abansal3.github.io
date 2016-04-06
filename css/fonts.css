@@ -1,0 +1,35 @@
+@font-face {
+	font-family: 'Avenir Condensed';
+	src: url('../fonts/avenir-next-It-pro/AvenirNextLTPro-UltLtCn.otf');
+}
+
+@font-face {
+	font-family: 'Avenir Condensed Regular';
+	src: url('../fonts/avenir-next-It-pro/AvenirNextLTPro-Regular.otf');
+}
+
+@font-face {
+	font-family: 'Caviar Dreams';
+	src: url('../fonts/Caviar-Dreams/CaviarDreams.ttf');
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/gotham-fonts-by-designrazzi/GOTHAM-LIGHT.TTF');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Gotham Bold';
+    src: url('../fonts/gotham-fonts-by-designrazzi/GOTHAM-BOLD.TTF');
+}
+
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url('../fonts/gotham-fonts-by-designrazzi/GOTHAM-MEDIUM.TTF');
+}
+
+@font-face {
+    font-family: 'Gotham Light';
+    src: url('../fonts/gotham-fonts-by-designrazzi/GOTHAM-LIGHT.TTF');
+}
