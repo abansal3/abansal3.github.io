@@ -8,17 +8,17 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
     <head>
         <title>Arpit Bansal</title>
-        
+
         <link href="css/index.css" type="text/css" rel="stylesheet"/>
-        
+
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-        
+
         <!-- Favicons -->
-        
+
         <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-touch-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-touch-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-touch-icon-72x72.png">
@@ -40,14 +40,16 @@
         <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
         <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
-        
-        
+
+
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/angular.min.js" type="application/javascript"></script>
         <script src="js/index.js" type="application/javascript"></script>
+        <script src="js/controller.js" type="application/javascript"></script>
     </head>
-    
-    <body>
-        
+
+    <body ng-controller="mainController">
+
         <header>
             <h3><a href="index.php">Arpit Bansal | <span>Designer. Developer. Entrepreneur.</span></a></h3>
             <i class="fa fa-bars"></i>
@@ -69,7 +71,10 @@
     background-position: center">
                 </div>
                 <div class="slideText">
-                                        
+                    <form enctype="multipart/form-data" method="post" ng-submit="submit()">
+                        <p>{{ statement + ' ' + question}}</p>
+                        <input id="name" ng-show="inputShow" ng-model="name" value=""/>
+                    </form>
                 </div>
             </section>
             <section class="slide">
@@ -92,11 +97,11 @@
                 </div>
             </section>
         </section>
-        
+
         <footer>
             <p>Press the <span>arrow keys</span> to explore the page</p>
         </footer>
-    
+
     </body>
 </html>
 
