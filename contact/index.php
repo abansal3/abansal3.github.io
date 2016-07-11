@@ -1,19 +1,18 @@
 <?php
-    require_once("../database_connection.php");
+    require_once('../swift/lib/swift_required.php');
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Arpit Bansal</title>
-        
+
         <link href="../css/contact.css" type="text/css" rel="stylesheet"/>
-        
+
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-        
+
         <!-- Favicons -->
-        
+
         <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-touch-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-touch-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-touch-icon-72x72.png">
@@ -35,16 +34,16 @@
         <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
         <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
-        
-        
+
+
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="../js/contact.js" type="application/javascript"></script>
     </head>
-    
+
     <body>
-        
+
         <header>
-            <h3><a href="../index.php">Arpit Bansal | <span>Designer. Developer. Entrepreneur.</span></a></h3>
+            <h3><a href="../#">Arpit Bansal | <span>Designer. Developer. Entrepreneur.</span></a></h3>
             <i class="fa fa-bars"></i>
                 <div class="dropdown">
                     <ul>
@@ -55,11 +54,11 @@
                     </ul>
                 </div>
         </header>
-        
+
         <section id="main">
             <section id="contact_form" class="sections">
-                <form method="post" enctype="text/plain">
-                    <table>  
+                <form method="post" enctype="multipart/form-data">
+                    <table>
                         <tr>
                             <td>Name:</td>
                             <td><input name="name" type="text" value=""/></td>
@@ -80,9 +79,9 @@
                     <button name="contact_submit" type="submit">Contact Me!</button>
                 </form>
             </section>
-            
+
             <?php include('mail.php'); ?>
-            
+
             <section id="social_network" class="sections">
                 <h2>Connect with me:</h2>
                 <div id="icons">
@@ -94,9 +93,5 @@
             </section>
         </section>
     </body>
-    
-</html>
 
-<?php
-    require_once("../database_connection_close.php");
-?>
+</html>

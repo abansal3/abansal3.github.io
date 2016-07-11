@@ -7,7 +7,7 @@ $(document).ready(function () {
     });
 
     $(window).keyup(function(e) {
-        if (e.keyCode == 39 || e.keyCode == 40) {
+        if (e.keyCode === 39) {
             var currentSlide = $('.active-slide');
             var nextSlide = currentSlide.next();
 
@@ -18,7 +18,7 @@ $(document).ready(function () {
             currentSlide/*.animate({right: '1200px'})*/.fadeOut(600).removeClass('active-slide');
             nextSlide.fadeIn(600).addClass('active-slide');
 
-        } else if (e.keyCode == 37 || e.keyCode == 38) {
+        } else if (e.keyCode === 37) {
             var currentSlide = $('.active-slide');
             var prevSlide = currentSlide.prev();
 

@@ -1,14 +1,5 @@
-<?php
-
-    ob_start();
-    require_once("database_connection.php");
-
-    session_start();
-//session_destroy();
-?>
-
 <!DOCTYPE html>
-<html lang="en" ng-app="app">
+<html lang="en" ng-app="arpit">
     <head>
         <title>Arpit Bansal</title>
 
@@ -43,19 +34,23 @@
 
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="js/angular.min.js" type="application/javascript"></script>
         <script src="js/index.js" type="application/javascript"></script>
-        <script src="js/controller.js" type="application/javascript"></script>
+
+        <!-- Angular -->
+        <script src="https://code.angularjs.org/1.5.7/angular.min.js"></script>
+        <script src="https://code.angularjs.org/1.5.7/angular-route.min.js"></script>
+        <script src="https://code.angularjs.org/1.5.7/angular-resource.min.js"></script>
+        <script src="js/app.js" type="application/javascript"></script>
     </head>
 
     <body ng-controller="mainController">
 
         <header>
-            <h3><a href="index.php">Arpit Bansal | <span>Designer. Developer. Entrepreneur.</span></a></h3>
+            <h3><a href="#/">Arpit Bansal | <span>Designer. Developer. Entrepreneur.</span></a></h3>
             <i class="fa fa-bars"></i>
                 <div class="dropdown">
                     <ul>
-                        <li><a href="index.php">Home</a></li>
+                        <li><a href="#/">Home</a></li>
                         <li><a href="https://greatmindsthinkdifferent.wordpress.com/" target="_blank">Blog</a></li>
                         <li><a href="https://www.freelancer.com/u/barpit123.html" target="_blank">Portflio</a></li>
                         <li><a href="contact/">Contact Me</a></li>
@@ -65,16 +60,15 @@
 
         <section id="page">
             <section class="slide active-slide">
-                <div class="slideImg" style="background-image: url('images/1-1.png');
+                <div class="slideImg" style="background-image: url('images/3.png');
     background-size: 400px 400px;
     background-repeat: no-repeat;
     background-position: center">
                 </div>
                 <div class="slideText">
-                    <form enctype="multipart/form-data" method="post" ng-submit="submit()">
-                        <p>{{ statement + ' ' + question}}</p>
-                        <input id="name" ng-show="inputShow" ng-model="name" value=""/>
-                    </form>
+                    <div class="form" my-enter="submit()" ng-view>
+
+                    </div>
                 </div>
             </section>
             <section class="slide">
@@ -104,8 +98,3 @@
 
     </body>
 </html>
-
-<?php
-    require_once("database_connection_close.php");
-    ob_end_flush();
-?>
