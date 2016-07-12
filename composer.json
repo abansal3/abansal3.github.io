@@ -6,5 +6,7 @@
             "email": "abansal3@babson.edu"
         }
     ],
-    "require": {}
+    "require": {
+        "swiftmailer/swiftmailer": "@stable"
+    }
 }
