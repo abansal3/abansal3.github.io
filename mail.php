@@ -29,8 +29,11 @@ try {
           ->setBody("Hi " . $name . ", \n\n" . "You had contacted me through my website. Just to verify, this is the information you had entered: \n\n" . "Name: $name\nEmail:$email\nPhone: $phone\nMessage: $message\n\nThank you so much for taking the time to explore my website! I will be reaching out to you personally to talk with you.");
 
         $result = $mailer->send($message);
-} catch (e) {
-    print_r(e);
+
+}
+
+catch (Exception $e) {
+    echo 'Message' . $e->getMessage();
 }
 
 ?>
