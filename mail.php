@@ -1,12 +1,13 @@
 <?php
-echo "Hi\n\n";
-print_r($HTTP_RAW_POST_DATA);
+
+print_r($_POST);
 require_once('vendor/swiftmailer/swiftmailer/lib/swift_required.php');
 
     if (count($HTTP_RAW_POST_DATA) > 0) {
         // Convert from json to object
         $json = json_decode($HTTP_RAW_POST_DATA);
         //print_r($json);
+        
         // Assign variables
         $name = $json->name;
         $message = $json->message;
