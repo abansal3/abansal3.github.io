@@ -1,5 +1,5 @@
 <?php
-    require_once('../swift/lib/swift_required.php');
+    require_once('../vendor/swiftmailer/swiftmailer/lib/swift_required.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -50,7 +50,7 @@
                         <li><a href="../">Home</a></li>
                         <li><a href="https://greatmindsthinkdifferent.wordpress.com/" target="_blank">Blog</a></li>
                         <li>Portflio</li>
-                        <li><a href="/contact">Contact Me</a></li>
+                        <li><a href="contact/">Contact Me</a></li>
                     </ul>
                 </div>
         </header>
