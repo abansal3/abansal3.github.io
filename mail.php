@@ -17,7 +17,7 @@ try {
 
         // email config
 
-        $gmail = '173.194.65.108';
+        $gmail = 'smtp.gmail.com';
 
         $transport = Swift_SmtpTransport::newInstance($gmail, 587, "tls")
           ->setUsername('barpit123@gmail.com')
