@@ -52,7 +52,7 @@
                     <ul>
                         <li><a href="#/">Home</a></li>
                         <li><a href="https://greatmindsthinkdifferent.wordpress.com/" target="_blank">Blog</a></li>
-                        <li><a href="https://www.freelancer.com/u/barpit123.html" target="_blank">Portflio</a></li>
+                        <li><a href="https://bitbucket.org/abansal3/profile/repositories?visibility=public">Portflio</a></li>
                         <li><a href="contact/">Contact Me</a></li>
                     </ul>
                 </div>
