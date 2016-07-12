@@ -107,10 +107,12 @@ app.controller('mainController',['$scope','$location','getInfo','$http', functio
             }
         }
 
-        $http.post('http://localhost/ArpitBansal/mail.php', data, config)
+        $http.post('mail.php', data, config)
         .success(function (data, status, headers, config) {
-            $scope.PostDataResponse = data;
-            console.log($scope.PostDataResponse);
+            console.log(data);
+            console.log(status);
+            console.log(headers);
+            console.log(config);
         })
         .error(function (data, status, header, config) {
             $scope.ResponseDetails = "Data: " + data +
