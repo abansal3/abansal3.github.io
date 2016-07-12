@@ -1,6 +1,6 @@
 <?php
 
-require_once 'swift/lib/swift_required.php';
+require_once('swift/lib/swift_required.php');
 
     if (count($HTTP_RAW_POST_DATA) > 0) {
         // Convert from json to object
