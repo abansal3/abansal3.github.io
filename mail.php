@@ -19,7 +19,7 @@ try {
 
         $gmail = '173.194.65.108';
 
-        $transport = Swift_SmtpTransport::newInstance($gmail, 25, "tls")
+        $transport = Swift_SmtpTransport::newInstance($gmail, 25, "ssl")
           ->setUsername('barpit123@gmail.com')
           ->setPassword('kvhncsdcbmckkhlo');
 
