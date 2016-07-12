@@ -1,13 +1,10 @@
 <?php
 
-print_r($_POST);
-print_r(file_get_contents("php://input"));
-
 require_once('vendor/swiftmailer/swiftmailer/lib/swift_required.php');
 
-    if (count($HTTP_RAW_POST_DATA) > 0) {
+    if (count(file_get_contents("php://input")) > 0) {
         // Convert from json to object
-        $json = json_decode($HTTP_RAW_POST_DATA);
+        $json = json_decode(file_get_contents("php://input"));
         //print_r($json);
 
         // Assign variables
