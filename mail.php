@@ -1,5 +1,5 @@
 <?php
-
+echo "Hi\n\n";
 print_r($HTTP_RAW_POST_DATA);
 require_once('vendor/swiftmailer/swiftmailer/lib/swift_required.php');
 
