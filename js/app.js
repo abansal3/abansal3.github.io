@@ -107,7 +107,7 @@ app.controller('mainController',['$scope','$location','getInfo','$http', functio
             }
         }
 
-        $http.post('mail.php', data, config)
+        $http.post('../mail.php', data, config)
         .success(function (data, status, headers, config) {
             console.log(data);
             console.log(status);
