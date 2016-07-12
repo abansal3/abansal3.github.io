@@ -5,6 +5,8 @@ require_once('vendor/swiftmailer/swiftmailer/lib/swift_required.php');
     // Convert from json to object
     $obj = json_decode(file_get_contents("php://input"));
 
+    print_r($obj);
+
     // Assign variables
     $name = $obj->name;
     $message = $obj->message;
