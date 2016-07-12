@@ -115,11 +115,10 @@ app.controller('mainController',['$scope','$location','getInfo','$http', functio
             console.log(config);
         })
         .error(function (data, status, header, config) {
-            $scope.ResponseDetails = "Data: " + data +
-                "<hr />status: " + status +
-                "<hr />headers: " + header +
-                "<hr />config: " + config;
-            console.log($scope.ResponseDetails);
+            console.log(data);
+            console.log(status);
+            console.log(header);
+            console.log(config);
         });
     };
 
