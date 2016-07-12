@@ -14,7 +14,7 @@ require_once('vendor/swiftmailer/swiftmailer/lib/swift_required.php');
 
         // email config
 
-        $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
+        $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 587, "tls")
           ->setUsername('barpit123@gmail.com')
           ->setPassword('vibgyor123');
 
