@@ -578,6 +578,30 @@ section {
     padding-top: 50px;
 }
 
+.tile-left, .tile-right {
+    min-height: 350px;
+}
+
+.technologies {
+    height: 30px;
+}
+
+.technology {
+    padding: 0px 5px;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    border-radius: 5px;
+    background: gray;
+    color: white;
+    margin: 3px;
+    line-height: 35px;
+}
+
+div.description {
+    padding: 25px !important;
+}
+
 /* Contact Us */
 
 div.contact {
@@ -596,6 +620,19 @@ img.profile {
     display: inline-block;
 }
 
+.contactSocialIcons {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 100px;
+}
+
+.contactSocialIcon {
+    color: yellow;
+}
+
 /* Extras */
 
 
@@ -605,6 +642,26 @@ img.profile {
     border-bottom: 1px solid black;
     width: 150px;
     margin: 0 auto;
+}
+
+.mobileOnly {
+    display: none;
+    width: 85%;
+    height: auto;
+    background: rgba(255,255,255,0.6);
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+    position: absolute;
+    bottom: 150;
+}
+
+.mobileOnly .bio {
+    font-size: 12pt;
+}
+
+.content__wrapper {
+    align-items: center;
 }
 
 
@@ -643,5 +700,43 @@ img.profile {
     #parallax-world-of-ugg .block {
         padding: 30px 15px;
         width: 290px;
+    }
+    div.contact {
+        flex-direction: column-reverse;
+        height: 100vh;
+    }
+
+    div.half {
+        width: 80%;
+        margin: auto;
+    }
+
+    div.description {
+        overflow-y: scroll;
+    }
+
+    h6.uppercase {
+        text-align: left;
+    }
+
+    ul.social-container {
+        display: none;
+    }
+
+    h1.heading {
+        padding-left: 0 !important;
+        line-height: 50px;
+    }
+
+    div.ellipses-container {
+        display: none;
+    }
+
+    .mobileOnly {
+        display: block;
+    }
+
+    .landing-page-container {
+        height: 100vh;
     }
 }
